@@ -8,11 +8,18 @@
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"
   },
-  "keywords": ["api", "validation", "email", "phone", "fastify"],
+  "keywords": [
+    "api",
+    "validation",
+    "email",
+    "phone",
+    "fastify"
+  ],
   "author": "Guray OZSEKER",
   "license": "MIT",
   "dependencies": {
     "@supabase/supabase-js": "^2.39.7",
+    "@upstash/redis": "^1.36.0",
     "axios": "^1.6.7",
     "dotenv": "^16.4.5",
     "fastify": "^4.25.0",
