@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: email-phone-validator
+    env: node
+    region: frankfurt 
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: REDIS_HOST
+        sync: false
+      - key: REDIS_PORT
+        sync: false
+      - key: REDIS_PASSWORD
+        sync: false
+      - key: NODE_ENV
+        value: production
